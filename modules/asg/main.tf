@@ -5,7 +5,6 @@ resource "aws_launch_configuration" "example" {
   security_groups        = [var.aws_security_group]
   key_name               =  "Tzvi-Devops-Course"
   user_data              =  var.user_data
-  iam_instance_profile   =  "arn:aws:iam::464972461761:instance-profile/ec2-s3"
 
   lifecycle {
     create_before_destroy = true
